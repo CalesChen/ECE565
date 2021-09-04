@@ -1,0 +1,4 @@
+# ignore the .o file
+*.o
+# ignore the executable file
+/loop_performance
