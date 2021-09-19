@@ -1,4 +1,6 @@
 # ignore the .o file
 *.o
+*.txt
 # ignore the executable file
-/loop_performance
+/hw1/loop_performance
+/hw1/func_inlining
