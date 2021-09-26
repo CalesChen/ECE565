@@ -35,7 +35,7 @@ int main(int argc, char** argv){
   uint64_t index;
   struct timespec start_time, end_time;
 
-  num_elements = 4096;
+  num_elements = 2820000;
   num_traversals = atoi(argv[1]);
   array = (uint64_t*)malloc(num_elements * sizeof(uint64_t));
 
@@ -55,7 +55,7 @@ int main(int argc, char** argv){
 
   double elapsed_ns = calc_time(start_time, end_time);
   printf("Time = %f\n", elapsed_ns);
-  printf("Bandwidth for write = %f GB/s \n ", (((uint64_t)num_elements * (uint64_t)num_traversals * 8 * 2) / (elapsed_ns)));
+  printf("Bandwidth for write = %f GB/s \n ", (((uint64_t)num_elements * (uint64_t)num_traversals * 8*2) / (elapsed_ns)));
 
   free(array);
   
