@@ -35,7 +35,7 @@ int main(int argc, char** argv){
   uint64_t index;
   struct timespec start_time, end_time;
 
-  num_elements = 2820000;
+  num_elements = 4096;
   num_traversals = atoi(argv[1]);
   array = (uint64_t*)malloc(num_elements * sizeof(uint64_t));
 
